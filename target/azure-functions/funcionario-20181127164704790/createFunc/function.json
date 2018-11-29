@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "..\\Funcionario-1.0-SNAPSHOT.jar",
+  "entryPoint" : "Arquitetura.Function.create",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "createFuncRest",
+    "direction" : "in",
+    "route" : "funcionario",
+    "authLevel" : "function",
+    "methods" : [ "POST" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

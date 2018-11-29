@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "..\\Funcionario-1.0-SNAPSHOT.jar",
+  "entryPoint" : "Arquitetura.Function.search",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "searchFuncRest",
+    "direction" : "in",
+    "route" : "funcionario",
+    "authLevel" : "function",
+    "methods" : [ "GET" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

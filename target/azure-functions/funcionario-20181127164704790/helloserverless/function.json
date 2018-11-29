@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "..\\Funcionario-1.0-SNAPSHOT.jar",
+  "entryPoint" : "Arquitetura.Function.hello",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "hellorest",
+    "direction" : "in",
+    "route" : "hello",
+    "authLevel" : "function",
+    "methods" : [ "GET" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

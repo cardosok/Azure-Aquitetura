@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "..\\Funcionario-1.0-SNAPSHOT.jar",
+  "entryPoint" : "Arquitetura.Function.delete",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "deleteFuncRest",
+    "direction" : "in",
+    "route" : "funcionario",
+    "authLevel" : "function",
+    "methods" : [ "DELETE" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}

@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "..\\Funcionario-1.0-SNAPSHOT.jar",
+  "entryPoint" : "Arquitetura.Function.update",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "name" : "updateFuncrest",
+    "direction" : "in",
+    "route" : "funcionario",
+    "authLevel" : "function",
+    "methods" : [ "PUT" ]
+  }, {
+    "type" : "http",
+    "name" : "$return",
+    "direction" : "out"
+  } ]
+}
